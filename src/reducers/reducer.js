@@ -1,4 +1,4 @@
-import ALL_ADS from '../actions'
+import {ALL_ADS} from '../actions'
 
 export default function reducer(state = [], action = {}) {
   switch (action.type) {

@@ -10,7 +10,7 @@ function allAdvertisements(payload){
   }
 } 
 
-export default function getAds(){
+export function getAds(){
   return function(dispatch){
     request
       .get(baseUrl)

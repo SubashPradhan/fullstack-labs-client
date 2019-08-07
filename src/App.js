@@ -1,10 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import AdvertisementContainer from './AdvertisementContainer';
+import './App.css'
 
-function App() {
-  return hello
-    
-
+class App extends Component {
+  render() {
+    return (
+        <AdvertisementContainer />
+    );
+  }
+}
+const mapStateToProps = (state) =>{
+  return {
+    advertisements : state
+  }
 }
 
-export default App;
+export default connect (mapStateToProps)(App)
