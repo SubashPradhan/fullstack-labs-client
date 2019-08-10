@@ -1,18 +1,21 @@
 import React, { Component } from 'react'
-import {getAds} from './actions'
+import {getAds} from '../actions'
 import {connect} from 'react-redux'
 import Advertisement from './Advertisement'
 
-class AdvertisementContainer extends Component(){
+class AdvertisementContainer extends Component{
   
   componentDidMount() {
     this.props.getAds()
+    console.log(this.props.getAds())
   }
   
   render(){
+    console.log(this.props)
     return(
       <div>
-        <Advertisement advertisements ={this.props.advertisements} />
+        <Advertisement 
+          advertisements ={this.props.advertisements} />
 
       </div>
     )
@@ -22,7 +25,7 @@ class AdvertisementContainer extends Component(){
 
 const mapsStateToProps = (state) => {
   return {
-    advertisements: state
+    advertisements: state.advertisements
 
   }
 }  

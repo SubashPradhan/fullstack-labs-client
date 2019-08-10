@@ -1,22 +1,41 @@
-import request from 'superagent'
-import { functionTypeAnnotation } from '@babel/types';
+import * as request from 'superagent'
 const baseUrl = "http://localhost:4000"
 export const ALL_ADS = 'ALL_ADS' 
 
 function allAdvertisements(payload){
   return{
-    types: ALL_ADS,
+    type: ALL_ADS,
     payload
   }
 } 
 
-export function getAds(){
-  return function(dispatch){
-    request
-      .get(baseUrl)
+export const getAds = () => (dispatch, getState) => {
+  const state = getState()
+  const { advertisements} = state
+
+  if(!advertisements.length) {
+    request(`${baseUrl}/advertisement`)
       .then(response => {
         const action = allAdvertisements(response.body)
-        dispatch (action)
+
+        dispatch(action)
+        console.log(response.body)
       })
+      .catch(console.error);
   }
 }
+
+// export const getImages = () => (dispatch, getState) => {
+//   const state = getState()
+//   const { images } = state
+
+//   if (!images.length) {
+//     request(`${baseUrl}/image`)
+//       .then(response => {
+//         const action = allImages(response.body)
+
+//         dispatch(action)
+//       })
+//       .catch(console.error)
+//   }
+// }
