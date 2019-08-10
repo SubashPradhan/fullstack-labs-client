@@ -1,14 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Advertisement (props) {
   const advertisements = props
     .advertisements
     .map(advertisement => <div key={advertisement.id} className="ads">
-      <h3>{advertisement.title.toUpperCase()}</h3>
-      <img src = {advertisement.picture} alt = {advertisement.title} />
-
+      <p>{advertisement.title.toUpperCase()}:
+      {advertisement.price}</p>
     </div>)
     return <div>
-      {advertisements}
+      {/* {advertisements} */}
+      <Link to={`/advertisement`}>{advertisements}</Link>
     </div>
 }

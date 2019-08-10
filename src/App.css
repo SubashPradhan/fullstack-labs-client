@@ -1,22 +1,20 @@
 .App {
   text-align: center;
-  display: inline-block;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 255, 255);
-
+  background-color: #6e798a;
 }
 .ads{
-  align-content: center;
-  background-color: #6e798a;
   text-align: center;
 }
 
 h3{
-  font-style: inherit;
+  font-style: inherit; 
+}
 
-  
+.title {
+  font-style: bold;
 }
 
 .App-header {
@@ -39,13 +37,4 @@ img {
   width: 250px;
   min-width: auto;
   min-height: auto
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

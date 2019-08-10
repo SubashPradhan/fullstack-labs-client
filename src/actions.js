@@ -26,17 +26,5 @@ export const getAds = () => (dispatch, getState) => {
   }
 }
 
-// export const getImages = () => (dispatch, getState) => {
-//   const state = getState()
-//   const { images } = state
 
-//   if (!images.length) {
-//     request(`${baseUrl}/image`)
-//       .then(response => {
-//         const action = allImages(response.body)
 
-//         dispatch(action)
-//       })
-//       .catch(console.error)
-//   }
-// }
