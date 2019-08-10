@@ -1,5 +1,6 @@
 import * as request from 'superagent'
-const baseUrl = "http://localhost:4000"
+const baseUrl = "https://pure-thicket-37035.herokuapp.com"
+// const baseUrl = "http://localhost:4000"
 export const ALL_ADS = 'ALL_ADS' 
 
 function allAdvertisements(payload){
@@ -14,7 +15,7 @@ export const getAds = () => (dispatch, getState) => {
   const { advertisements} = state
 
   if(!advertisements.length) {
-    request(`${baseUrl}/advertisement`)
+    request(`${baseUrl}`)
       .then(response => {
         const action = allAdvertisements(response.body)
 
