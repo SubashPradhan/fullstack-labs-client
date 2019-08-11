@@ -10,7 +10,7 @@ class App extends Component {
     return <div className="ads">
       <Route exact path='/' component={AdvertisementContainer} />
       <Route path='/advertisement/:id' component={DetailsContainer} />
-      <Route path='/sellerFrom' component={SellerForm} />
+      <Route path='/sellerForm' component={SellerForm} />
     </div>
   }
 }

@@ -5,3 +5,13 @@
   background: green;
   cursor: pointer;
 }
+
+.sellButton {
+  margin-top: 100px; 
+  border-radius: 20px;
+  font-size: 25px;
+  color: goldenrod;
+  background: green;
+  cursor: pointer;
+
+}
