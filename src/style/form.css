@@ -1,0 +1,21 @@
+.form{
+  font-style: bold;
+  font-size: 20px;
+}
+label{
+  display: flow-root;
+}
+
+input{
+  margin: 10px;
+  border: 2px solid green;
+}
+
+.submit{
+  margin-top: 25px;
+  border-radius: 30px;
+  font-size: 25px;
+  color: goldenrod;
+  background: green;
+  cursor: pointer;
+}

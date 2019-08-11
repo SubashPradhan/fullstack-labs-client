@@ -15,7 +15,7 @@ export default function Advertisement(props) {
       </Link>
     </div>)
   return <div>
-    <h3>Select items to view details</h3>
+    <h3>Select Items to view details !!!</h3>
     {advertisements}
     <Link to ='/sellerForm'><button className="sellButton">WANNA SELL ?? CLICK HERE !!</button></Link>
   </div>

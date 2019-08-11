@@ -1,17 +1,12 @@
-.App {
-  text-align: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 255, 255);
+
+
+body{
   background-color: #6e798a;
 }
 .ads{
   text-align: center;
 }
 
-h3{
-  font-style: inherit; 
-}
 
 .title {
   font-style: bold;

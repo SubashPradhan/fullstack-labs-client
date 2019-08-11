@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import {addAdvertisement} from '../actions'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
+import '../style/form.css'
 
 class Sellerform extends Component {
   state ={
@@ -30,12 +32,13 @@ class Sellerform extends Component {
       picture: ""
 
     })
+    alert(`Your product has been updated !! Thank you`)
 
   }
 
   render() {
     return <div>
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="form">
         <label> NAME :
           <input type="text" name="title" value={this.state.title} onChange={this.handleChange}/>
         </label>
@@ -55,8 +58,9 @@ class Sellerform extends Component {
           <input type="text" name="picture" value={this.state.picture} onChange={this.handleChange}/>
         </label>
         
-        <input type="Submit" name="submit" />
+        <input type="Submit" name="submit" className="submit"/>
       </form>
+      <Link to = "/"><button className="submit">GO BACK TO HOMEPAGE</button></Link>
     </div>
   }
 }
