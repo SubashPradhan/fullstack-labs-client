@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import AdvertisementContainer from './components/AdvertisementContainer';
 import DetailsContainer from './components/DetailsContainer'
 import { Route } from 'react-router-dom'
-import './App.css'
+import './style/App.css'
 
 class App extends Component {
   render() {
