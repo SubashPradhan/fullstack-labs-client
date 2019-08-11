@@ -7,11 +7,9 @@ class AdvertisementContainer extends Component{
   
   componentDidMount() {
     this.props.getAds()
-    console.log(this.props.getAds())
   }
   
   render(){
-    console.log(this.props)
     return(
       <div>
         <Advertisement 

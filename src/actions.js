@@ -2,6 +2,7 @@ import * as request from 'superagent'
 const baseUrl = "https://pure-thicket-37035.herokuapp.com"
 // const baseUrl = "http://localhost:4000"
 export const ALL_ADS = 'ALL_ADS' 
+export const GET_DETAILS = 'GET_DETAILS'
 
 function allAdvertisements(payload){
   return{
@@ -25,6 +26,4 @@ export const getAds = () => (dispatch, getState) => {
       .catch(console.error);
   }
 }
-
-
 
