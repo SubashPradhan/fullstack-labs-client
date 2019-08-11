@@ -9,6 +9,7 @@ export default function(props){
     <p>Price: {props.price}</p>
     <p>Description: {props.description}</p>
     <p>Phone-Number: {props.phone_number}</p>
+    <p>E-mail: {props.email}</p>
     <Link key={props.id} to ={'/'} ><button className="button">Homepage</button></Link>
   </div>
 }
