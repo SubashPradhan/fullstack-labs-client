@@ -1,5 +1,5 @@
 ## FullStack-labs-Client
-A full-stack App for e-bay clone for sale and buy purpose with collaboration with **MerylGeugies** [MerylGeugies](https://github.com/MerylGeugies/)
+First full-stack App for e-bay clone for sale and buy purpose with collaboration with **MerylGeugies** [MerylGeugies](https://github.com/MerylGeugies/)
 ![](fullstack.gif)
 
 ## Running the app locally
